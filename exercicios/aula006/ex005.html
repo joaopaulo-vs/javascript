@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+         body {
+            text-shadow: 1px 1px 2px black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            padding: 20px;
+            background-image: linear-gradient(rgb(0, 136, 255), rgb(0, 204, 255));
+            margin: 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        div {
+            background-image: linear-gradient(rgb(0, 157, 255),blue);
+            background-repeat: no-repeat;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 2px 3px 8px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a Usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique aqui</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        document.write(p1.innerHTML)
+        var corpo = window.document.body
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'blue'
+    </script>
+</body>
+</html>
