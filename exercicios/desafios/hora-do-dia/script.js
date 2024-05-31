@@ -1,6 +1,6 @@
 function carregar(){
     var now = new Date()
-    var hora = 19//now.getHours()
+    var hora = now.getHours()
     var box = document.querySelector("div#text")
     var image = document.getElementById("image")
     box.innerHTML = (`Agora são ${hora} horas.`)
