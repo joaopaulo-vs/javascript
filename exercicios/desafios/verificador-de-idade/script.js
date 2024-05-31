@@ -57,10 +57,10 @@ function ler(){
                 if (idade >= 15 && idade < 19){
                     image.setAttribute('src', 'imagens/mulher-18-anos.jpg')
                 }
-                if (idade >= 19 && idade < 25){
+                if (idade >= 19 && idade < 26){
                     image.setAttribute('src', 'imagens/mulher-25-anos.jpg')
                 }
-                if (idade >= 25 && idade < 40){
+                if (idade >= 26 && idade < 40){
                     image.setAttribute('src', 'imagens/mulher-35-anos.jpg')
                 }
                 if (idade >= 40 && idade < 55){
